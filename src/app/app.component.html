@@ -1,4 +1,51 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<main>
+  <section>
+    <h1>My website</h1>
+
+    <picture>
+      <source
+        media="(max-width: 799px)"
+        srcset="
+          https://live.staticflickr.com/65535/49196327183_2b77e25990_n.jpg
+        "
+      />
+      <source
+        media="(min-width: 800px)"
+        srcset="
+          https://live.staticflickr.com/65535/49196327183_d6acdf2009_6k.jpg
+        "
+      />
+      <img
+        src="https://live.staticflickr.com/65535/49196327183_d6acdf2009_6k.jpg"
+      />
+    </picture>
+
+    <img
+      srcset="
+        https://live.staticflickr.com/65535/49196327183_2b77e25990_n.jpg 480w,
+        elva-fairy-800w.jpg                                              800w
+      "
+      sizes="(max-width: 600px) 480px,
+              800px"
+      src="https://live.staticflickr.com/65535/49196327183_d6acdf2009_6k.jpg"
+    />
+
+    <hr />
+    <img
+      srcset="
+        https://live.staticflickr.com/65535/49196327183_2b77e25990_n.jpg,
+        https://live.staticflickr.com/65535/49196327183_d6acdf2009_6k.jpg 1.5x,
+        https://live.staticflickr.com/65535/49196327183_d6acdf2009_8k.jpg 2x
+      "
+      src="elva-fairy-640w.jpg"
+      alt="Ugra Ugra Ugra"
+    />
+
+    <p>
+      Header image originally by
+      <a href="https://www.flickr.com/photos/eliasroviello/">eliasroviello</a>.
+    </p>
+  </section>
+</main>
+<p>Start editing to see some magic happen :)</p>
